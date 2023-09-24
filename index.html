@@ -44,11 +44,17 @@
               <div class="card-body">
                 <h5 class="card-title">Consutório</h5>
                 <p class="card-text">Registre um de nossos estabelecimentos, consulte um estabelecimento ou altere uma</p>
-                <a href="Consultoriop.php" class="btn btn-primary">Consultório</a>
+                <a onclick="redirectPage(Consultorio.php)" class="btn btn-primary">Consultório</a>
               </div>
             </div>
         </div>
       </div>
+
+    <script>
+        function redirectPage(url){
+            window.location.href=`${window.location.host}/${url}`
+        }
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
